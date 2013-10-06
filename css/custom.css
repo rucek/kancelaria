@@ -15,6 +15,10 @@ div.jumbotron div.container {
     padding-right: 90px;
 }
 
+div.home p {
+    text-align: justify;
+}
+
 div.team img {
     float: left;
     vertical-align: middle;
