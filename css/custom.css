@@ -14,3 +14,18 @@ div.jumbotron {
 div.jumbotron div.container {
     padding-right: 90px;
 }
+
+div.team img {
+    float: left;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+div.team p {
+    text-align: justify;
+}
+
+div.team p.footer {
+    clear: both;
+    margin-top: 90px;
+}
