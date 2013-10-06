@@ -7,7 +7,7 @@ div.well h1 {
 }
 
 div.jumbotron {
-    background: url('/assets/img/main_background.jpg') 106px 11px no-repeat;
+    background: url('/assets/img/main_background.jpg') no-repeat 50% 10px;
     text-align: right;
 }
 
