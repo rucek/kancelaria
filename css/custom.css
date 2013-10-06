@@ -29,3 +29,7 @@ div.team p.footer {
     clear: both;
     margin-top: 90px;
 }
+
+div.services li>strong {
+    display: block;
+}
