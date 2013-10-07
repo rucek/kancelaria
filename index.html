@@ -7,6 +7,7 @@
     <meta name="keywords"
           content="kancelaria, adwokacka, kancelaria adwokacka, adwokat, adwokat warszawa, adwokat warszawa ursynów, porady prawne, pomoc prawna">
     <meta name="author" content="">
+    <meta name="fragment" content="!">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <title>Kancelaria Adwokacka Adwokat Monika Kunicka</title>
@@ -28,7 +29,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}">
-                    <a href="#{{menuItem.path}}">{{menuItem.label}}</a>
+                    <a href="#!{{menuItem.path}}">{{menuItem.label}}</a>
                 </li>
             </ul>
         </div>
