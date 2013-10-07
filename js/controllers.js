@@ -1,4 +1,6 @@
 function MainCtrl($scope, $location) {
+    $scope.status = '';
+
     $scope.menuItems = [
         {path: '/', label: 'Strona główna'},
 //        {path: '/o-kancelarii', label: 'O kancelarii'},
@@ -8,4 +10,8 @@ function MainCtrl($scope, $location) {
     ];
 
     $scope.$location = $location;
+
+    $scope.$on('$viewContentLoaded', function() {
+        $scope.status = 'ready';
+    })
 }
