@@ -1,0 +1,112 @@
+<html lang="en" ng-app="officeApp" class="ng-scope"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kancelaria Adwokacka Adwokat Monika Kunicka">
+    <meta name="keywords" content="kancelaria, adwokacka, kancelaria adwokacka, adwokat, adwokat warszawa, adwokat warszawa ursynów, porady prawne, pomoc prawna">
+    <meta name="author" content="">
+    <meta name="fragment" content="!">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Kancelaria Adwokacka Adwokat Monika Kunicka</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none !important;}ng\:form{display:block;}</style></head>
+
+<body ng-controller="MainCtrl" data-status="ready" style="" class="ng-scope">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!-- ngRepeat: menuItem in menuItems --><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
+                    <a href="#!/strona-glowna" class="ng-binding">Strona główna</a>
+                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
+                    <a href="#!/zespol" class="ng-binding">Zespół</a>
+                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope active">
+                    <a href="#!/uslugi" class="ng-binding">Usługi</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div ng-view=""><div class="container services ng-scope">
+    <div class="well">
+        <h1>Usługi</h1>
+        <strong>Kancelaria zapewnia Klientom profesjonalne usługi w zakresie:</strong>
+        <ul>
+            <li>reprezentacji przed sądami i innymi organami administracyjnymi i samorządowymi,</li>
+            <li>przygotowywania pozwów, środków zaskarżenia i innych pism procesowych,</li>
+            <li>sporządzania opinii prawnych oraz projektów umów,</li>
+            <li>udziału w negocjacjach i działaniach przedsądowych.</li>
+        </ul>
+
+        <strong>Najważniejsze dziedziny prawa, w których Kancelaria świadczy obsługę prawną:</strong>
+        <ul>
+            <li>prawo spółek handlowych, w szczególności problematyka tworzenia, łączenia i przekształcania spółek
+                handlowych oraz nabywania ich udziałów albo akcji i ochrony praw korporacyjnych wspólników albo
+                akcjonariuszy;
+            </li>
+            <li>prawo umów w obrocie gospodarczym krajowym i międzynarodowym;</li>
+            <li>windykację roszczeń;</li>
+            <li>prawo obrotu nieruchomościami;</li>
+            <li>prawo bankowe;</li>
+            <li>prawo ubezpieczeń;</li>
+            <li>prawo pracy, w szczególności problematykę nawiązania i rozwiązania stosunku pracy oraz roszczeń
+                odszkodowawczych z tego tytułu;
+            </li>
+            <li>podatkowe aspekty działalności przedsiębiorców;</li>
+            <li>prawo spadkowe i rodzinne, także z elementem międzynarodowym;</li>
+            <li>karnoprawną ochronę obrotu gospodarczego.</li>
+        </ul>
+
+
+        <p>Wynagrodzenie Kancelarii za prowadzenie obsługi prawnej jest zawsze ustalane indywidualnie, podczas spotkania
+            z Klientem. Wysokość wynagrodzenia uzależniona jest od rodzaju zlecenia, terminu jego wykonania, nakładu
+            pracy i wartości przedmiotu sprawy. Wynagrodzenie może mieć następującą formę:</p>
+        <ul>
+            <li>
+                <strong>system rozliczeń godzinowych</strong>
+                Wysokość wynagrodzenia zależy od ilości czasu poświęconego na wykonanie danego zlecenia. System ten jest
+                stosowany przede wszystkim przy stałej obsłudze prawnej a także, gdy nie jest możliwe określenie z góry
+                zakresu prac.
+            </li>
+            <li>
+                <strong>wynagrodzenie zryczałtowane</strong>
+                Wynagrodzenie określane jest poprzez ustalenie z góry konkretnej kwoty wynagrodzenia. System ten jest
+                stosowany w sprawach, w których można w przybliżeniu określić zakres prac i ich wymiar czasowy.
+            </li>
+            <li>
+                <strong>stały ryczałt miesięczny</strong>
+                Jest to forma wynagrodzenia stosowana w przypadku Klientów korzystających z usługi stałej obsługi
+                prawnej Kancelarii.
+            </li>
+        </ul>
+
+        <p>Wszelkie opłaty sądowe i skarbowe oraz dodatkowe koszty związane z prowadzoną sprawą (opinie biegłych,
+            ekspertyzy, dojazdy, itp.) pokrywa Klient. Wynagrodzenie Kancelarii jest płatne z góry.</p>
+
+        <p>W przypadku niektórych spraw, przede wszystkim prowadzonych przed sądami, możliwe jest ustalenie
+            wynagrodzenia za prowadzenie całej sprawy oraz wynagrodzenia częściowo zależnego od rezultatu (<em>success
+                fee</em>).</p>
+    </div>
+</div></div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/controllers.js" type="text/javascript"></script>
+
+
+</body></html>

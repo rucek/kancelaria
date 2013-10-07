@@ -1,0 +1,110 @@
+<html lang="en" ng-app="officeApp" class="ng-scope"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kancelaria Adwokacka Adwokat Monika Kunicka">
+    <meta name="keywords" content="kancelaria, adwokacka, kancelaria adwokacka, adwokat, adwokat warszawa, adwokat warszawa ursynów, porady prawne, pomoc prawna">
+    <meta name="author" content="">
+    <meta name="fragment" content="!">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Kancelaria Adwokacka Adwokat Monika Kunicka</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none !important;}ng\:form{display:block;}</style></head>
+
+<body ng-controller="MainCtrl" data-status="ready" style="" class="ng-scope">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!-- ngRepeat: menuItem in menuItems --><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope active">
+                    <a href="#!/strona-glowna" class="ng-binding">Strona główna</a>
+                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
+                    <a href="#!/zespol" class="ng-binding">Zespół</a>
+                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
+                    <a href="#!/uslugi" class="ng-binding">Usługi</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div ng-view=""><div class="jumbotron ng-scope">
+    <div class="container">
+        <h1>Kancelaria Adwokacka</h1>
+
+        <h2>Adwokat Monika Kunicka</h2>
+
+        <!--<p>TODO Jakaś zajawka na temat usług</p>-->
+
+        <!--<p><a class="btn btn-primary btn-lg">Poznaj zakres naszych usług &raquo;</a></p>-->
+    </div>
+</div>
+
+<div class="container home ng-scope">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>O kancelarii</h2>
+
+            <p>Kancelaria Adwokacka adwokat Moniki Kunickiej świadczy wszechstronną pomoc prawną, zapewniając swoim
+                Klientom profesjonalną i kompleksową obsługę prawną na najwyższym poziomie.</p>
+
+            <!--<p><a class="btn btn-default" href="#/o-kancelarii">Więcej informacji &raquo;</a></p>-->
+        </div>
+        <div class="col-lg-4">
+            <h2>Oferta</h2>
+
+            <p>Kancelaria prowadzi obsługę prawną zarówno dla klientów indywidualnych jak i przedsiębiorców.</p>
+
+            <p>Oferuje wszechstronną pomoc w zakresie wielu dziedzin prawa, a zwłaszcza proponuje prowadzenie:</p>
+
+            <ul>
+                <li>spraw gospodarczych;</li>
+                <li>spraw cywilnych, w tym rodzinnych (rozwody, alimenty) i spadkowych;</li>
+                <li>windykacji należności;</li>
+                <li>spraw z zakresu prawa pracy;</li>
+                <li>spraw administracyjnych;</li>
+                <li>spraw karnych.</li>
+            </ul>
+
+            <p><a class="btn btn-default" href="#!/uslugi">Więcej informacji »</a></p>
+        </div>
+        <div class="col-lg-4">
+            <h2>Kontakt</h2>
+
+            <address>
+                <strong>Kancelaria Adwokacka Adwokat Monika Kunicka</strong><br>
+                <span class="glyphicon glyphicon-phone"></span> 602 431 444<br>
+                <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:kancelaria@kunicka.com">kancelaria@kunicka.com</a><br>
+            </address>
+
+            <!--<p><a class="btn btn-default" href="#/kontakt">Więcej informacji &raquo;</a></p>-->
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>© Kancelaria Adwokacka Adwokat Monika Kunicka 2013</p>
+    </footer>
+</div></div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/controllers.js" type="text/javascript"></script>
+
+
+</body></html>
