@@ -27,11 +27,11 @@
             <ul class="nav navbar-nav">
                 <!-- ngRepeat: menuItem in menuItems --><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
                     <a href="#!/strona-glowna" class="ng-binding">Strona główna</a>
-                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope active">
+                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
                     <a href="#!/zespol" class="ng-binding">Zespół</a>
                 </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
                     <a href="#!/uslugi" class="ng-binding">Usługi</a>
-                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope">
+                </li><li ng-repeat="menuItem in menuItems" ng-class="{'active': menuItem.path == $location.path()}" class="ng-scope active">
                     <a href="#!/cennik" class="ng-binding">Cennik</a>
                 </li>
             </ul>
@@ -52,22 +52,37 @@
 </div>
 
 <div class="container">
-    <div ng-view=""><div class="well team ng-scope">
-    <h1>Zespół</h1>
+    <div ng-view=""><div class="well prices ng-scope">
+    <h1>Cennik</h1>
 
-    <img src="assets/img/monika_kunicka.jpg" alt="Monika Kunicka" title="Monika Kunicka">
+    <p>Wynagrodzenie Kancelarii za prowadzenie obsługi prawnej jest zawsze ustalane indywidualnie, podczas spotkania
+        z Klientem. Wysokość wynagrodzenia uzależniona jest od rodzaju zlecenia, terminu jego wykonania, nakładu
+        pracy i wartości przedmiotu sprawy. Wynagrodzenie może mieć następującą formę:</p>
+    <ul>
+        <li>
+            <strong>system rozliczeń godzinowych</strong>
+            Wysokość wynagrodzenia zależy od ilości czasu poświęconego na wykonanie danego zlecenia. System ten jest
+            stosowany przede wszystkim przy stałej obsłudze prawnej a także, gdy nie jest możliwe określenie z góry
+            zakresu prac.
+        </li>
+        <li>
+            <strong>wynagrodzenie zryczałtowane</strong>
+            Wynagrodzenie określane jest poprzez ustalenie z góry konkretnej kwoty wynagrodzenia. System ten jest
+            stosowany w sprawach, w których można w przybliżeniu określić zakres prac i ich wymiar czasowy.
+        </li>
+        <li>
+            <strong>stały ryczałt miesięczny</strong>
+            Jest to forma wynagrodzenia stosowana w przypadku Klientów korzystających z usługi stałej obsługi
+            prawnej Kancelarii.
+        </li>
+    </ul>
 
-    <h2>Monika Kunicka</h2>
+    <p>Wszelkie opłaty sądowe i skarbowe oraz dodatkowe koszty związane z prowadzoną sprawą (opinie biegłych,
+        ekspertyzy, dojazdy, itp.) pokrywa Klient. Wynagrodzenie Kancelarii jest płatne z góry.</p>
 
-    <p>
-        Adwokat, członek Izby Adwokackiej w Warszawie. Ukończyła z wynikiem bardzo dobrym studia na Wydziale Prawa i
-        Administracji Uniwersytetu Warszawskiego. Aplikację adwokacką odbyła przy Okręgowej Radzie Adwokackiej w
-        Warszawie. Specjalizuje się w zagadnieniach prawa cywilnego w tym w windykacji roszczeń, prawie spadkowym,
-        rodzinnym i opiekuńczym.Zajmuje się również prawem karnym i administracyjnym. Biegle włada językiem
-        angielskim.
-    </p>
-
-    <p class="footer">Kancelaria współpracuje z adw. Magdaleną Kijowską-Dober.</p>
+    <p>W przypadku niektórych spraw, przede wszystkim prowadzonych przed sądami, możliwe jest ustalenie
+        wynagrodzenia za prowadzenie całej sprawy oraz wynagrodzenia częściowo zależnego od rezultatu (<em>success
+            fee</em>).</p>
 </div></div>
 
     <hr>
