@@ -6,6 +6,7 @@ function MainCtrl($scope, $location) {
 //        {path: '/o-kancelarii', label: 'O kancelarii'},
         {path: '/zespol', label: 'Zespół'},
         {path: '/uslugi', label: 'Usługi'},
+        {path: '/cennik', label: 'Cennik'}
 //        {path: '/kontakt', label: 'Kontakt'}
     ];
 
